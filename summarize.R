@@ -26,8 +26,8 @@ summarize=function(form,
     vrs=get.form.vars(form,data)      # get the variables from formula 
     resp=vrs$resp                     # get the response column name
     grp.clm=vrs$pred                  # get the group column name
-    y=dset[,resp]                     # get the y-variable
-    grp=dset[,grp.clm]                # get the group variable
+    y=data[,resp]                     # get the y-variable
+    grp=data[,grp.clm]                # get the group variable
   }
   
   ######################################
