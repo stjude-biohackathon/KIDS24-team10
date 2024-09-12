@@ -16,7 +16,7 @@ box.plot=function(form,           # formula or name of variable in data
   try.form=try(as.formula(form),silent=T)         # determine whether form is a formula                   
   if (class(try.form)=="try-error")               # if not, form is a column of data
   {
-    form=as.character(deparse(substitute(form)))
+    #form=as.character(deparse(substitute(form)))
     if (!(form%in%colnames(data)))
       stop(paste0(form," is not a column of input data."))
   }
